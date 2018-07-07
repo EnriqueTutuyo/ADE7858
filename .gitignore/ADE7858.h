@@ -1,3 +1,44 @@
 #ifndef ADE7758_h
 #define ADE7758_h
 #include "Arduino.h" 
+
+#define READ 0x01//SPI LEER 71
+#define WRITE 0x00//SPI ESCRIBIR 72
+
+#define AIRMS 0x43C0//CORRIENTE RMS
+#define BIRMS 0x43C2
+#define CIRMS 0x43C4
+
+#define AVRMS 0x43C1//VOLTAJE RMS
+#define BVRMS 0x43C3
+#define CVRMS 0x43C5
+
+#define AVRMSOS 0x4388//CALIBRACION VOLTAJE
+#define BVRMSOS 0x438A
+#define CVRMSOS 0x438C
+
+#define AIRMSOS 0x4387//CALIBRACION CORRIENTE
+#define BIRMSOS 0x4389
+#define CIRMSOS 0x438B
+
+#define MASK0 0xE50A//INTERUPCIONES TABLA 39
+#define MASK1 0xE50B//INTERUPCIONES TABLA 40
+
+#define LCYCMODE 0xE702//TABLA 52
+
+#define STATUS0 0xE502//TABLA 37
+#define STATUS1 0xE503//TABLA 38
+
+#define RSTATUS 0x
+
+#define ZXVA 0x
+#define ZXVB 0x
+#define ZXVC 0x
+
+#define ZXIA 0x 
+#define ZXIB 0x
+#define ZXIC 0x
+
+#define PHASE_A 0
+#define PHASE_B 1
+#define PHASE_C 2
